@@ -96,6 +96,6 @@ body {
   color: #f4f1f1;
   z-index: 10;
 }
-#toggle-password svg:nth-child(2) {
+.hidden{
   display: none;
 }
