@@ -1,0 +1,100 @@
+@import url(https://googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap);
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url(rayngus_Digital_background_featuring_an_envelope_icon_in_the_ce_dbab2ac3-b963-430b-bc56-69e9f9c0483d.png);
+  background-size: cover;
+  background-position: center;
+}
+
+.wrapper {
+  margin-top: 50px;
+  width: 420px;
+  height: 520px;
+  background: transparent;
+  border: 2px solid rgba(255, 255, 255, 2);
+  backdrop-filter: blur(20px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 2);
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.wrapper::after {
+  width: 420px;
+  height: 520px;
+}
+.wrapper h1 {
+  font-size: 36px;
+  text-align: center;
+}
+
+.wrapper .input-box {
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.wrapper button {
+  margin-top: 50px;
+}
+.wrapper button:hover {
+  background-color: grey;
+}
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border: 1px solid grey;
+  outline: none;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  padding: 20px 45px 20px 20px;
+}
+
+.input-box input::placeholder {
+  color: #fff;
+}
+
+.wrapper .btn {
+  width: 100%;
+  height: 45px;
+  background: #fff;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+  cursor: pointer;
+  font-size: 16px;
+  color: #333;
+  font-weight: 600;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+}
+
+.eye-icon {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  font-size: 20px;
+  color: #f4f1f1;
+  z-index: 10;
+}
+#toggle-password svg:nth-child(2) {
+  display: none;
+}

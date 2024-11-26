@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Katalog Penyewaan PlayStation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Katalog PlayStation</h1>
+    <div id="product-list">
+      <!-- Produk pertama -->
+      <div class="product">
+        <img src="ps3.jpg" alt="PlayStation 3" />
+        <h2>PlayStation 3</h2>
+        <p>Kategori: PlayStation</p>
+        <p class="price">Harga: Rp25.000/6 jam</p>
+        <a href="/sewa/Sewa.html" class="btn" data-product="PlayStation 3"
+          >Sewa Sekarang</a
+        >
+        <p class="price">Harga: Rp5.000/jam</p>
+        <a href="/rental/rental.html" class="btn" data-product="PlayStation 3"
+          >Rental Sekarang</a
+        >
+      </div>
+
+      <!-- Produk kedua -->
+      <div class="product">
+        <img src="ps4.jpg" alt="PlayStation 4" />
+        <h2>PlayStation 4</h2>
+        <p>Kategori: PlayStation</p>
+        <p class="price">Harga: Rp60.000/6 jam</p>
+        <a href="/sewa/Sewa.html" class="btn" data-product="PlayStation 4"
+          >Sewa Sekarang</a
+        >
+        <p class="price">Harga: Rp10.000/jam</p>
+        <a href="/rental/rental.html" class="btn" data-product="PlayStation 4"
+          >Rental Sekarang</a
+        >
+      </div>
+
+      <!-- Produk ketiga -->
+      <div class="product">
+        <img src="ps5.jpg" alt="PlayStation 5" />
+        <h2>PlayStation 5</h2>
+        <p>Kategori: PlayStation</p>
+        <p class="price">Harga: Rp95.000/6 jam</p>
+        <a href="/sewa/Sewa.html" class="btn" data-product="PlayStation 5"
+          >Sewa Sekarang</a
+        >
+        <p class="price">Harga: Rp15.000/jam</p>
+        <a href="/rental/rental.html" class="btn" data-product="PlayStation 5"
+          >Rental Sekarang</a
+        >
+      </div>
+    </div>
+    <script>
+      // Tambahkan event listener pada semua tombol
+      document.querySelectorAll(".btn").forEach((button) => {
+        button.addEventListener("click", function (event) {
+          const product = this.dataset.product; // Ambil jenis PlayStation
+          if (product) {
+            localStorage.setItem("selectedProduct", product); // Simpan ke localStorage
+          } else {
+            console.error("Produk tidak ditemukan untuk tombol ini.");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
